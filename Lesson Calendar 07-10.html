@@ -1,0 +1,166 @@
+<html>
+
+<head>
+  <div style="background-color: darkslategray">	
+  <title>Student &middot; Homepage</title>
+  <script>function myButtonFunction() {
+  alert"(Hello")}</script>
+</head>
+
+<body>
+  <div style="background-color: #395B50"">
+  <div class="grid-container">
+  <header class="header">
+ 
+  <nav>
+  <div class="topnav_list"><br>
+	 <ul>
+		<a class="topnav_list-item"></a>
+		<!---<a class="topnav__list-item">| Item Two</a>
+		<a class="topnav__list-item">Item Three</a>--->
+	 </ul><br>
+  </div>
+  </nav>
+  
+  <div class="header__avatar"></div>
+  <div style="background-color: #395B50"">
+</header>
+</body>
+  <aside class="sidenav">
+  <div style="background-color: #395B50"">	
+  <img src="ECDcoding-logo.png" width="240" height="190" alt=ECDcoding Logo>
+  <img src="Girl Child.png" width="190" height="170" alt=GirlChild class="picBottom">
+    <center><ul class="sidenav__list">
+	  <li><a href="About Us.html" style="color: whitesmoke">About Us</a></li><br><br>
+	  <li><a href="Membership.html" style="color: whitesmoke">Membership</a></li><br><br>
+      <li><a href="Lesson Vaults.html" style="color: whitesmoke">Lesson Vaults</a></li><br><br>
+	  <!---<a href="#contact" style="color: whitesmoke">Contact</a><br>--->
+    </ul></center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+  </aside>
+  <center><main class="main"><iframe src="https://calendar.google.com/calendar/embed?src=f821d5648420d602061d3064a261843150fccfa30d06d571c97b7292f3786d74%40group.calendar.google.com&ctz=Africa%2FJohannesburg" style="border: 0" width="1159.4" height="650" frameborder="0" scrolling="no"></iframe></main><br><br><br>
+  
+  <footer class="footer">
+	<div style="background-color: #395B50"">
+	 <div class="listing padding-top--24 padding-bottom--24 flex-flex center-center">
+              <span><a href="#">&copy;</a>ECDcoding 2025</span>
+              <span><a href="Terms and Policy.html">Terms&Policy</a></span>
+              <span><a href="Contact Us.html">Contact-Us</a></span>
+			  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAShJREFUSEu11b0uREEYgOFnuQUkEpHo0LgGhQuQqNyARiEUCipsg0Si0ChUCtdA4RI0egoi4QokfnbkrMjZ2d0Z55xTf/O+33w/Z1oa/loN88UEK9jDXAX5LRbD+ZjgHvMV4N2jP+yY4KsG+C87V7CPsyKBdewMSCb7Bps4KQGD4KCPpEcwrDTjeCvBJvFclyDAXkqwMbymCrpx/W6yjcMSbBWXdQkCp41TjGIJR52mT6QKhvUgd3qzmxwEj3goTDOYrmtMr3CBa3wW0JGiTGtYjoiS9uC9M5phoc6H1GcLx6WYpBLtFo1NqX9Ywo0/gUmCKTyl0LGAu0GC2B7kvBehJx+5gsTko2FJTW5E0PiDE57M8N+frZD+TbEj0RetArf3aM6U/Ev8DavcMBm78qY2AAAAAElFTkSuQmCC"/>
+            </div>
+    <!---<div class="footer__copyright">&copy; 2025 ECDcoding</div>--->
+    <!---<div class="footer__signature">Student Google Lesson Calendar</div>--->
+  </footer>
+</div>
+<span>
+  <style>
+  /* Simple dashboard grid CSS */
+
+/* Assign grid instructions to our parent grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  grid-template-rows: 30px 1fr 0px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+  overflow: hidden;
+  
+}
+
+body {
+	font-family: Helvetica;
+	text shadow: none; 
+	overflow: hidden;
+}
+
+/* Give every child element its grid name */
+.header {
+  grid-area: header;
+  background-color: #395B50";
+  margin: 20px;
+}
+
+  .sidenav {
+    display: flex; /* Will be hidden on mobile */
+    flex-direction: column;
+    grid-area: sidenav;
+    background-color: #394263;
+  }
+  .sidenav__list {
+    padding: 20px;
+    margin-top: 30px;
+    list-style-type: none;
+	text-decoration: none;
+  }
+  .sidenav__list-item {
+    padding: 20px 20px 20px 40px;
+    color: #ddd;
+
+  }
+  .sidenav__list-item:hover {
+    background-color: rgba(25, 25, 25, 0.2);
+    cursor: pointer;
+	text-decoration: none;
+  }
+
+ .main-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 20px;
+    height: 150px; 
+    background-color: #e3e4e6;
+    color: slategray;
+	frameborder: 0;
+	scrolling: no;
+  }
+
+.footer {
+  grid-area: footer;
+  background-color: none;
+  margin:0 0 3px 400px;
+}
+
+  .header, .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: none;
+	word-spacing: 15px;
+	word-position: center;
+	letter-spacing: 0.1px;
+	
+  }
+  
+  a {
+	text-decoration: none;
+ }
+ 
+ .picBottom {
+	float: bottom;
+	margin:10 0 0px 30px;
+	}
+</style>
+</span>
+
+<script src="construct calender = document.querySelector("#app-calender");
+for (let day = 1; day ≤ 31; day++)
+console.log (day)
+calender.insertAdjacentHTML("beforeend", '<div></div>')
+"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
