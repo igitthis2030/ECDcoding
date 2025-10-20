@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>ECDcoding</title>
+		<head>
+				<meta name="description" content="ECDcoding is the a tech platform that provides education solutions for early childhood development (ECDs) institutions that are based in the townships and rural areas within the Republic of South Africa.">
+				
+		<body>
+			<div style="background-color: #395B50">		
+			<center><img src="ECDcoding-logo.png" width="300" height="220" alt=ECDcoding Logo></center>
+			
+			<nav class="navbar">
+			<ul>
+				<li><a href="About Us.html">About Us</a></li>
+                <li><a href="Membership.html">Membership</a></li>
+                <li><a href="Lesson Vaults.html">Trending Lessons</a></li>
+				<li><a href="Contact Us.html"></a></li>
+				<li><a href="Lesson Calendar 04-06.html">Pre-Scholer Lesson</a></li>
+				<li><a href="Lesson Calendar 07-10.html">Primary Scholer Lesson</a></li>
+			</ul>
+		</nav>
+		
+		</body>
+		
