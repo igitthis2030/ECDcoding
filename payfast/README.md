@@ -1,5 +1,8 @@
 # PayFast Custom Integration Example (ECDcoding)
 
+Permissions:
+- Contents: edit/ write
+  
 This sample demonstrates a simple PayFast custom integration using Node.js + Express.
 
 Features:
