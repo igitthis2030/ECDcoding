@@ -1,29 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ECDcoding — PayFast demo</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 600px; margin: 2rem auto; }
+      label { display:block; margin-top:1rem; }
+      input[type="text"], input[type="number"] { width:100%; padding:.5rem; }
+    </style>
+  </head>
+  <body>
+    <h1>ECDcoding — PayFast demo</h1>
+    <form id="payForm" action="/create-payment" method="post">
+      <label>
+        Item name
+        <input type="text" name="item_name" value="ECDcoding Membership" required />
+      </label>
+      <label>
+        Amount (ZAR)
+        <input type="number" name="amount" step="0.01" value="10.00" required />
+      </label>
+      <label>
+        Customer email (optional)
+        <input type="text" name="email" />
+      </label>
+      <button type="submit">Pay with PayFast</button>
+    </form>
 
-  <title>ECDcoding</title>
-		<head>
-				<meta name="description" content="ECDcoding is the a tech platform that provides education solutions for early childhood development (ECDs) institutions that are based in the townships and rural areas within the Republic of South Africa.">
-				
-		<body>
-			<div style="background-color: #395B50">		
-			<center><img src="ECDcoding-logo.png" width="300" height="220" alt=ECDcoding Logo></center>
-			
-			<nav class="navbar">
-			<ul>
-				<li><a href="About Us.html">About Us</a></li>
-                <li><a href="Membership.html">Membership</a></li>
-                <li><a href="Lesson Vaults.html">Trending Lessons</a></li>
-				<li><a href="Contact Us.html"></a></li>
-				<li><a href="Lesson Calendar 04-06.html">Pre-Scholer Lesson</a></li>
-				<li><a href="Lesson Calendar 07-10.html">Primary Scholer Lesson</a></li>
-			</ul>
-		</nav>
-		
-		</body>
-		
+    <h2 style="margin-top:2rem">Create a subscription</h2>
+    <form id="subForm" action="/create-subscription" method="post">
+      <label>
+        Item name
+        <input type="text" name="item_name" value="ECDcoding Monthly" required />
+      </label>
+      <label>
+        Amount (ZAR)
+        <input type="number" name="amount" step="0.01" value="5.00" required />
+      </label>
+      <label>
+        Interval
+        <select name="interval">
+          <option value="monthly">monthly</option>
+          <option value="annual">annual</option>
+        </select>
+      </label>
+      <label>
+        Customer email (optional)
+        <input type="text" name="email" />
+      </label>
+      <button type="submit">Create Subscription</button>
+    </form>
+  </body>
+</html>
