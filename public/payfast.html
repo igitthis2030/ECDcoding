@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ECDcoding — PayFast demo</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 600px; margin: 2rem auto; }
+      label { display:block; margin-top:1rem; }
+      input[type="text"], input[type="number"] { width:100%; padding:.5rem; }
+    </style>
+  </head>
+  <body>
+    <h1>ECDcoding — PayFast demo</h1>
+    <form id="payForm" action="/create-payment" method="post">
+      <label>
+        Item name
+        <input type="text" name="item_name" value="ECDcoding Membership" required />
+      </label>
+      <label>
+        Amount (ZAR)
+        <input type="number" name="amount" step="0.01" value="10.00" required />
+      </label>
+      <label>
+        Customer email (optional)
+        <input type="text" name="email" />
+      </label>
+      <button type="submit">Pay with PayFast</button>
+    </form>
+
+    <h2 style="margin-top:2rem">Create a subscription</h2>
+    <form id="subForm" action="/create-subscription" method="post">
+      <label>
+        Item name
+        <input type="text" name="item_name" value="ECDcoding Monthly" required />
+      </label>
+      <label>
+        Amount (ZAR)
+        <input type="number" name="amount" step="0.01" value="5.00" required />
+      </label>
+      <label>
+        Interval
+        <select name="interval">
+          <option value="monthly">monthly</option>
+          <option value="annual">annual</option>
+        </select>
+      </label>
+      <label>
+        Customer email (optional)
+        <input type="text" name="email" />
+      </label>
+      <button type="submit">Create Subscription</button>
+    </form>
+  </body>
+</html>
